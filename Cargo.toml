@@ -1,0 +1,33 @@
+[package]
+name = "sentry_falcon"
+version = "0.1.0"
+edition = "2021"
+descrition = "AWS discovery"
+homepage = "https://github.com/UlrichSteiger/sentry_falcon"
+repository = "https://githbu.com/UlrichSteiger/sentry_falcon"
+readme = "README.md"
+keywords = [ "aws", "securtiy" ]
+categories = [ "command-line=utilities" ]
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.18", features = ["full"] }
+futures = "0.3.5"
+clap = "3.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = "1.0"
+serde_yaml = "0.8"
+dirs = "4.0"
+itertools = "0.10"
+aws-types = { version = "0.15", features = ["hardcoded-credentials"] }
+aws-config = "0.15"
+aws-sdk-config ="0.15"
+aws-sdk-sts = "0.15"
+aws-sdk-s3 = "0.15"
+aws-sdk-iam = "0.15"
+aws-sdk-organizations = "0.15"
+aws-sdk-route53 = "0.15"
+aws-sdk-rds = "0.15"
+aws-sdk-kms = "0.15"
